@@ -3,7 +3,6 @@
   "extends": [
     "config:base",
     ":semanticCommits",
-    "group:allNonMajor",
     ":automergeAll",
     ":automergeBranch",
     "schedule:weekly"
