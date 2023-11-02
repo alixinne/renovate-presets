@@ -15,6 +15,10 @@
       "extends": ["schedule:monthly"]
     },
     {
+      "matchPackageNames": ["gcr.io/distroless/cc"],
+      "automerge": true
+    },
+    {
       "matchDepNames": ["rust"],
       "extends": ["schedule:monthly"]
     }
