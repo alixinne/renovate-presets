@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>vtavernier/renovate-presets",
+    "github>vtavernier/renovate-presets//rust-toolchain",
+    "group:allNonMajor"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "extends": [":automergeAll", ":automergeBranch"]
+    },
+    {
+      "matchPackageNames": ["docker.io/library/rust", "gcr.io/distroless/cc"],
+      "extends": ["schedule:monthly"]
+    },
+    {
+      "matchDepNames": ["rust"],
+      "extends": ["schedule:monthly"]
+    }
+  ]
+}
