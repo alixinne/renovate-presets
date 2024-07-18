@@ -1,8 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>vtavernier/renovate-presets",
-    "github>vtavernier/renovate-presets//rust-toolchain",
+    "github>alixinne/renovate-presets",
+    "github>alixinne/renovate-presets//rust-toolchain",
     "group:allNonMajor"
   ],
   "packageRules": [
